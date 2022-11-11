@@ -1,12 +1,13 @@
 const CategoryItem = ({category}) =>{
+  const { title, id, imageUrl} = category;
   return(
-    <div key={category.id} className="category-container">
+    <div key={id} className="category-container">
         {/* <img src="" alt="" /> */}
         <div className='background-image' style={{ 
-          backgroundImage: `url(${category.imageUrl})`
+          backgroundImage: `url(${imageUrl})`
          }}/>
         <div className="category-body-container">
-          <h2>{category.title}</h2>
+          <h2>{title}</h2>
           <p>Shop Now</p>
         </div>
       </div>
