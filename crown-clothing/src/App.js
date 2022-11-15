@@ -1,17 +1,7 @@
 import './categories.styles.scss';
-import { Routes, Route, Outlet } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Home from './routes/home/home'
-
-const Navigation = () =>{
-  return(
-    <div>
-      <div>
-        <h1>I am the navigation bar component</h1>
-      </div>
-      <Outlet />
-    </div>
-  )
-}
+import Navigation from './routes/navigation/navigation'
 
 const Shop = () =>{
   return(
